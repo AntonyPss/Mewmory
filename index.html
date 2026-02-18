@@ -2,404 +2,234 @@
 <html lang="es">
 
 <head>
-    <!-- Metadatos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Antony Calvo">
-    <meta name="description" content="Una página dedicada a mis gatos.">
-    <meta name="keywords" content="gatos, mascotas, animales">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Mis gatos - Antony Calvo</title>
+    <title>Mewmory - Inicio</title>
 
-    <!-- Sources -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet"> <!-- Remixicon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta name="description"
+        content="Mewmory es una aplicación web para compartir fotos de tus gatos y crear recuerdos inolvidables.">
+    <meta name="keywords" content="mewmory, gatos, recuerdos, fotos, favoritos">
+    <meta property="og:title" content="Mewmory - Inicio">
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="images/icons/favicon.webp" type="image/webp">
 </head>
 
 <body>
     <!-- Header -->
-    <header class="main-header" aria-label="Header" role="heading">
-        <a href="/" class="logo-area">
-            <img src="assets/img/favicon.png" alt="Logo" loading="lazy">
-            <h1>Gatos de Antony</h1>
-        </a>
+    <header id="header" class="header" role="banner">
+        <div class="header-content container">
+            <!-- Logo -->
+            <a href="#" class="nav-logo" title="Mewmory" role="link">
+                <img src="assets/icons/logo.webp" alt="Logo">
+            </a>
 
-        <nav class="main-nav" aria-label="Navegación principal" role="navigation">
-            <a href="#home" class="nav-link">
-                <i class="ri-home-line"></i>
-                <span>Inicio</span>
-            </a>
-            <a href="#gallery" class="nav-link">
-                <i class="ri-gallery-line"></i>
-                <span>Galería</span>
-            </a>
-            <a href="#about" class="nav-link">
-                <i class="ri-information-line"></i>
-                <span>Acerca de Mí</span>
-            </a>
-            <a href="#contact" class="nav-link">
-                <i class="ri-mail-line"></i>
-                <span>Contacto</span>
-            </a>
-        </nav>
+            <!-- Navigation -->
+            <div id="navMenu" class="navigation-content" role="navigation">
+                <!-- Navigation Links -->
+                <nav class="nav-links" role="navigation" aria-label="Main Navigation">
+                    <a href="#home" class="nav-link" title="Inicio">Inicio</a>
+                    <a href="#cats" class="nav-link" title="Gatos">Gatos</a>
+                    <a href="#curiosities" class="nav-link" title="Curiosidades">Curiosidades</a>
+                    <a href="#care" class="nav-link" title="Cuidados">Cuidados</a>
+                </nav>
 
-        <div class="action-buttons">
-            <button id="theme-toggle" class="btn theme-toggle" aria-label="Cambiar tema">
-                <i class="fas fa-adjust" aria-hidden="true"></i>
-            </button>
-            <a href="https://github.com/AntonyPss" class="btn github-button" target="_blank" rel="noopener noreferrer">
-                <span>GitHub</span>
-                <i class="ri-arrow-right-up-line"></i>
-            </a>
+                <!-- Contact Me -->
+                <div class="nav-buttons" role="menubar">
+                    <a href="#contact" class="menu-item contact-button" title="Contactame" role="menuitem">
+                        Contáctame
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-icon" id="menuToggle">
+                <i class="ri-menu-line"></i>
+            </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main id="home" class="main-container" role="main">
-        <!-- Welcome -->
-        <section class="welcome-section">
-            <div class="labels">
-                <h1>¡Bienvenido a mi universo felino! 🐾</h1>
-                <p class="subtitle">Una mirada visual a la convivencia con mis gatos</p>
-                <p class="paragraph">Esta galería recoge momentos que, aunque simples, tienen una belleza única. Son
-                    gestos, miradas y silencios que hablan de compañía, rutina y afecto. Aquí, cada imagen es una pausa
-                    en el tiempo.</p>
-                <section class="more-buttons">
-                    <a href="#gallery" class="btn primary">Ver Galería</a>
-                    <a href="#about" class="btn secondary">Acerca de Mí</a>
-                </section>
-            </div>
-            <div class="image">
-                <img src="assets/img/gata_machis_portada.jpeg" alt="Gata Manchis en la portada" loading="lazy">
+    <main id="home" class="main" role="main" aria-label="Inicio de la aplicación">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content container">
+                <h1>Un nuevo comienzo empieza con un miau <i class="ri-heart-3-fill"></i></h1>
+
+                <p>Cientos de gatos rescatados esperan una segunda oportunidad. Encuentra a tu compañero de vida y
+                    transforma su futuro hoy
+                    mismo.</p>
+
+                <div class="hero-btns">
+                    <a href="#cats" class="hero-button btn-primary" title="Ver gatos">
+                        <i class="ri-service-fill"></i>
+                        Ver gatos
+                    </a>
+
+                    <a href="#about" class="hero-button btn-secondary" title="Explorar más">
+                        <i class="ri-information-line"></i>
+                        Explorar más
+                    </a>
+                </div>
             </div>
         </section>
 
-        <!-- About -->
-        <div id="about" class="about-section">
-            <div class="about-box">
-                <h3>Acerca de Mí</h3>
-                <p>Hola, me llamo Antony. Siempre he tenido un interés especial por los animales, especialmente los
-                    gatos. Me gusta observar su comportamiento, aprender sobre sus hábitos y cuidarlos. Los gatos son
-                    animales fascinantes por su independencia y curiosidad, y disfruto mucho compartir mi tiempo con
-                    ellos.
-                </p>
+        <!-- Abotu Section -->
+        <section id="about" class="about-section" role="region" aria-label="Sobre Mewmory">
+            <img src="assets/icons/yo.png" alt="Antony" class="about-image" width="200">
+            <div class="about-content">
+                <h2>Acerca de mí</h2>
+                <p>Soy un desarrollador web apasionado por crear interfaces limpias, amante de gatos e interesado en la
+                    tecnología. Mi objetivo es fusionar el desarrollo web con el bienestar animal para ayudar en la
+                    adopción de gatitos.</p>
             </div>
+        </section>
 
-            <!-- About Cats -->
-            <div class="about-cats-section">
-                <div class="about-cat-box">
-                    <h3>Sobre mis Gatos</h3>
-                    <div class="grid-container">
-                        <!-- Luna -->
-                        <div class="about-cat-card">
-                            <img src="assets/img/gata_luna_mirada_1.webp" alt="Luna mirando a la cámara" loading="lazy">
+        <!-- All Cats -->
+        <section id="cats" class="cats-section container" role="grid">
+            <h2 class="section-title">Nuestros Gatos</h2>
+            <p class="section-description">Descubre nuestra lista de gatos disponibles para la adopción. Cada uno tiene
+                una historia única.</p>
+            <div id="cats-grid" class="cats-grid">
+                <!-- Cat Cards will be dynamically inserted here -->
+            </div>
+        </section>
 
-                            <div class="card-info">
-                                <h4>Luna</h4>
-                                <p>Luna es juguetona, curiosa y muy cariñosa; le encanta acurrucarse en cualquier
-                                    rincón.</p>
-                            </div>
-                            <div class="cat-info" aria-label="Información adicional del gato.">
-                                <div class="cat-detail cat-age" data-age="1">
-                                    <i class="fa-regular fa-calendar"></i>
-                                    <span>1 año y medio</span>
-                                </div>
-                                <div class="cat-detail cat-gender" data-gender="female">
-                                    <i class="fa-solid fa-venus"></i>
-                                    <span>Hembra</span>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Curiosities Section -->
+        <section id="curiosities" class="curiosities-section container">
+            <h2 class="section-title">Curiosidades Felinas</h2>
+            <p class="section-description">Datos fascinantes sobre nuestros amigos.</p>
+            <div id="curiosities-grid" class="curiosities-grid">
+                <!-- Curiosity Cards will be dynamically inserted here -->
+            </div>
+        </section>
 
-                        <!-- Manchis -->
-                        <div class="about-cat-card">
-                            <img src="assets/img/gata_manchis_rostro.webp" alt="Manchis con mirada intensa"
-                                loading="lazy">
-                            <div class="card-info">
-                                <h4>Manchis</h4>
-                                <p>Manchis es cariñosa y curiosa, de pelaje suave; le encanta explorar y buscar
-                                    aventuras.</p>
-                            </div>
-                            <div class="cat-info" aria-label="Información adicional del gato.">
-                                <div class="cat-detail cat-age" data-age="1">
-                                    <i class="fa-regular fa-calendar"></i>
-                                    <span>1 año y medio</span>
-                                </div>
-                                <div class="cat-detail cat-gender" data-gender="female">
-                                    <i class="fa-solid fa-venus"></i>
-                                    <span>Hembra</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Thomy -->
-                        <div class="about-cat-card">
-                            <img src="assets/img/gato_thomy_jugando.webp" alt="Thomy jugando" loading="lazy">
-                            <div class="card-info">
-                                <h4>Thomy</h4>
-                                <p>Thomy es juguetón y curioso, con pelaje similar al de su mamá Manchis.</p>
-                            </div>
-                            <div class="cat-info" aria-label="Información adicional del gato.">
-                                <div class="cat-detail cat-age" data-age="1">
-                                    <i class="fa-regular fa-calendar"></i>
-                                    <span>3 meses</span>
-                                </div>
-                                <div class="cat-detail cat-gender" data-gender="male">
-                                    <i class="fa-solid fa-mars"></i>
-                                    <span>Macho</span>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Cuidados Section -->
+        <section id="care" class="care-section container" role="region" aria-label="Cuidados básicos para gatos">
+            <h2 class="section-title">Cuidados Básicos</h2>
+            <p class="section-description">Lo que tu michi necesita para una vida plena y saludable.</p>
+            <div class="care-grid">
+                <article class="care-card">
+                    <div class="care-icon-container color-peach">
+                        <i class="ri-restaurant-line"></i>
                     </div>
-                </div>
-            </div>
+                    <h3>Alimentación</h3>
+                    <p>Proporciona una dieta equilibrada y asegúrate de que siempre tenga <strong>agua
+                            fresca</strong> a su
+                        disposición.</p>
+                </article>
 
-            <!-- Gallery Section -->
-            <div id="gallery" class="gallery-section">
-                <div class="gallery-section-box">
-                    <h3>Galería de gatos</h3>
-                    <div class="gallery-grid-container">
-                        <!-- Luna Card -->
-                        <div class="gallery-card">
-                            <img src="assets/img/gata_luna_caricia.webp" alt="Luna siendo acariciada" loading="lazy">
-                            <div class="card-label">
-                                <h4 class="catName">Luna</h4>
-                                <p class="catDate">Luna siendo acariciada.</p>
-                            </div>
-                        </div>
-                        <div class="gallery-card">
-                            <img src="assets/img/gata_luna_caricia_2.webp" alt="Luna jugando en la cama" loading="lazy">
-                            <div class="card-label">
-                                <h4 class="catName">Luna</h4>
-                                <p class="catDate">Luna jugando en la cama.</p>
-                            </div>
-                        </div>
-                        <div class="gallery-card">
-                            <img src="assets/img/gata_luna_caricia_3.webp" alt="Luna descansando en la cama"
-                                loading="lazy">
-                            <div class="card-label">
-                                <h4 class="catName">Luna</h4>
-                                <p class="catDate">Luna descansando.</p>
-                            </div>
-                        </div>
-                        <div class="gallery-card">
-                            <img src="assets/img/gata_luna_caricia_4.webp" alt="Luna relajada en la cama"
-                                loading="lazy">
-                            <div class="card-label">
-                                <h4 class="catName">Luna</h4>
-                                <p class="catDate">Luna relajada.</p>
-                            </div>
-                        </div>
-
-                        <!-- Manchis Card -->
-                        <div class="gallery-card">
-                            <img src="assets/img/gata_manchis_caricia.webp" alt="Manchis siendo acariciada"
-                                loading="lazy">
-                            <div class="card-label">
-                                <h4 class="catName">Manchis</h4>
-                                <p class="catDate">Manchis siendo acariciada.</p>
-                            </div>
-                        </div>
-                        <div class="gallery-card">
-                            <img src="assets/img/gata_manchis_caricia_1.webp" alt="Manchis siendo acariciada"
-                                loading="lazy">
-                            <div class="card-label">
-                                <h4 class="catName">Manchis</h4>
-                                <p class="catDate">Manchis siendo acariciada.</p>
-                            </div>
-                        </div>
-                        <div class="gallery-card">
-                            <img src="assets/img/gata_manchis_durmiendo.webp" alt="Manchis durmiendo" loading="lazy">
-                            <div class="card-label">
-                                <h4 class="catName">Manchis</h4>
-                                <p class="catDate">Manchis durmiendo.</p>
-                            </div>
-                        </div>
-                        <div class="gallery-card">
-                            <img src="assets/img/gata_manchis_rostro.webp" alt="Manchis con rostro enojada."
-                                loading="lazy">
-                            <div class="card-label">
-                                <h4 class="catName">Manchis</h4>
-                                <p class="catDate">Manchis con rostro enojada.</p>
-                            </div>
-                        </div>
-
-                        <!-- Thomy -->
-                        <div class="gallery-card">
-                            <img src="assets/img/gato_thomy_caricia.webp" alt="Thomy siendo acariciado" loading="lazy">
-                            <div class="card-label">
-                                <h4 class="catName">Thomy</h4>
-                                <p class="catDate">Thomy siendo acariciado.</p>
-                            </div>
-                        </div>
-                        <div class="gallery-card">
-                            <img src="assets/img/gato_thomy_caricia_1.webp" alt="Thomy siendo acariciado en el mueble"
-                                loading="lazy">
-                            <div class="card-label">
-                                <h4 class="catName">Thomy</h4>
-                                <p class="catDate">Thomy siendo acariciado.</p>
-                            </div>
-                        </div>
-                        <div class="gallery-card">
-                            <img src="assets/img/gato_thomy_caricia_2.webp"
-                                alt="Thomy siendo acariciado en el muebleeee" loading="lazy">
-                            <div class="card-label">
-                                <h4 class="catName">Thomy</h4>
-                                <p class="catDate">Thomy siendo acariciado.</p>
-                            </div>
-                        </div>
-                        <div class="gallery-card">
-                            <img src="assets/img/gato_thomy_jugando.webp" alt="Thomy jugando en el mueble"
-                                loading="lazy">
-                            <div class="card-label">
-                                <h4 class="catName">Thomy</h4>
-                                <p class="catDate">Thomy jugando.</p>
-                            </div>
-                        </div>
+                <article class="care-card">
+                    <div class="care-icon-container color-teal">
+                        <i class="ri-heart-pulse-line"></i>
                     </div>
-                    <p style="text-align: center; margin: 20px 0;">Tengo más fotos pero no puedo mostrarlas aquí debido
-                        a restricciones de espacio.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Curiosity Section -->
-        <section class="curiosity-section">
-            <h3>Curiosidades sobre los gatos</h3>
-            <div class="curiosity-container">
-                <div class="curiosity-box">
-                    <h3>Sentido del Oído</h3>
-                    <p>Los gatos tienen un sentido del oído tan agudo que pueden escuchar sonidos hasta
-                        64 kHz. Esto es mucho más alto que el rango audible para los humanos, que es de aproximadamente
-                        20 kHz. Esta habilidad les permite detectar movimientos y sonidos que nosotros no podemos
-                        percibir,
-                        lo que es especialmente útil para cazar y estar alerta a su entorno.</p>
-                </div>
-                <div class="curiosity-box">
-                    <h3>Bigotes Sensibles</h3>
-                    <p>Los bigotes de los gatos no son solo decorativos: están conectados a terminaciones nerviosas muy
-                        sensibles.
-                        Les ayudan a medir espacios estrechos, detectar cambios en el aire y hasta percibir objetos sin
-                        verlos.
-                        Por eso, nunca deberías cortarlos: son parte esencial de su sistema de navegación.</p>
-                </div>
-                <div class="curiosity-box">
-                    <h3>Caída Controlada</h3>
-                    <p>Los gatos tienen un reflejo de enderezamiento que les permite girar su cuerpo en el aire y
-                        aterrizar
-                        sobre sus
-                        patas.
-                        Este reflejo se activa en menos de un segundo, incluso si caen desde alturas considerables.
-                        Aunque parezca que siempre caen bien, no significa que sean invulnerables: ¡la altura importa!
+                    <h3>Salud Preventiva</h3>
+                    <p>Mantén sus vacunas al día y realiza visitas periódicas al veterinario para detectar cualquier
+                        cambio.
                     </p>
-                </div>
-        </section>
+                </article>
 
-        <!-- Thanks for visit -->
-        <section class="thanks-section">
-            <h3>¡Gracias por visitar mi página de gatos! 🐱</h3>
-            <p>Espero que hayas disfrutado explorando las fotos y aprendiendo más sobre mis adorables compañeros
-                felinos. Si tienes alguna pregunta o simplemente quieres compartir tus propias historias de gatos,
-                no dudes en ponerte en contacto conmigo a través del formulario a continuación. ¡Me encantaría saber de
-                ti!</p>
-        </section>
-
-        <!-- Contact Section -->
-        <div id="contact" class="contact-section">
-            <div class="contact-box">
-                <h3>Contacto</h3>
-                <p>Si deseas ponerte en contacto conmigo, puedes enviarme un correo electrónico.</p>
-                <form class="contact-form" autocomplete="off" method="post" enctype="text/plain">
-                    <label for="name" aria-placeholder="Nombre">Nombre:</label>
-                    <input type="text" placeholder="Ingresa tu nombre..." id="name" name="name" required
-                        autocomplete="off">
-
-                    <label for="email" aria-placeholder="Correo Electrónico">Correo Electrónico:</label>
-                    <input type="email" placeholder="Ingresa tu correo electrónico..." id="email" name="email" required
-                        autocomplete="off">
-
-                    <label for="message" aria-placeholder="Mensaje">Mensaje:</label>
-                    <textarea id="message" name="message" rows="4" required
-                        placeholder="Ingresa tu mensaje..."></textarea>
-
-                    <button type="submit" class="btn primary">Enviar</button>
-
-                    <div id="error-message" class="hidden error-message">Error al enviar el mensaje. Por favor,
-                        inténtalo de nuevo.
+                <article class="care-card">
+                    <div class="care-icon-container color-lilac">
+                        <i class="ri-sparkling-line"></i>
                     </div>
-                    <div id="success-message" class="hidden success-message">¡Mensaje enviado con éxito!</div>
+                    <h3>Higiene</h3>
+                    <p>El arenero debe estar siempre limpio. Un gato aseado es un gato feliz y libre de estrés.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact-section container">
+            <h2 class="section-title">Contáctame</h2>
+            <p class="section-description">¿Tienes preguntas, sugerencias o simplemente quieres saludar? ¡Estoy aquí
+                para escucharte!</p>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">¿Cómo te llamas?</label>
+                        <input type="text" id="name" placeholder="Tu nombre o el de tu gato" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Tu correo</label>
+                        <input type="email" id="email" placeholder="michi-lover@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto gatuno</label>
+                        <select id="subject">
+                            <option value="curiosidad">Tengo una curiosidad nueva</option>
+                            <option value="consejo">Busco un consejo</option>
+                            <option value="historia">Quiero contarte una historia</option>
+                            <option value="otro">Solo quiero saludar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Cuéntame...</label>
+                        <textarea id="message" rows="5" placeholder="Escribe aquí tu mensaje felino..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">
+                        Enviar mensaje <i class="ri-send-plane-fill"></i>
+                    </button>
                 </form>
             </div>
-        </div>
+        </section>
     </main>
 
-    <p class="secret-label">Mi obsesión por los gatos no cabe en esta página, pero ellos sí caben en mi mundo.
-        Wuajajsjs.</p>
+    <div class="cat-icon">
+        <span id="catMessage" class="cat-icon-text"></span>
+        <a id="catButton" href="#home" class="cat-icon-btn">😺</a>
+    </div>
+
+    <div class="status-banner">
+        <p><i class="ri-hammer-line"></i> Página en construcción: pronto más novedades gatunas</p>
+    </div>
 
     <!-- Footer Section -->
-    <footer class="footer-section">
-        <div class="footer-content">
-            <div class="copyright">
-                <a href="#home" class="logo-area">
-                    <img src="assets/img/favicon.png" alt="Logo" loading="lazy">
-                    <h1>Gatos de Antony</h1>
-                </a>
-                <p>&copy; 2025 AntonyPss. Todos los derechos reservados.</p>
-                <p>Hecho con <i class="ri-heart-fill" style="color: #ad0c29;"></i> por Antony.</p>
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/icons/logo.webp" alt="Mewmory Logo" class="footer-logo">
+                <p>Creando recuerdos inolvidables junto a nuestros amigos felinos.</p>
             </div>
-            <div class="cat-icon">
-                <button id="catButton" class="cat-icon-btn">😺</button>
-                <span id="catMessage" class="cat-icon-text"></span>
+
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#cats">Gatos</a></li>
+                    <li><a href="#curiosities">Curiosidades</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
             </div>
-            <nav class="socials">
-                <h3>Redes sociales</h3>
-                <section class="socials-link">
-                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="https://discord.com" target="_blank" aria-label="Discord">
-                        <i class="fa-brands fa-discord"></i>
-                    </a>
-                </section>
-            </nav>
+
+            <div class="footer-social">
+                <h4>Redes sociales</h4>
+                <div class="social-icons">
+                    <a href="#" title="Discord"><i class="ri-discord-fill"></i></a>
+                    <a href="#" title="GitHub"><i class="ri-github-fill"></i></a>
+                    <a href="#" title="X (Twitter)"><i class="ri-twitter-x-line"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Mewmory. Hecho con <i class="ri-heart-3-fill"></i> por Antony.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Modal -->
-    <div id="galleryModal" class="modal">
-        <span class="close">&times;</span>
-        <div class="modal-nav">
-            <div class="nav-btn prev">&lt;</div>
-            <div class="nav-btn next">&gt;</div>
-        </div>
-        <div class="modal-content">
-            <img id="catImage" class="modal-image">
-            <div class="modal-info">
-                <h4 id="catName"></h4>
-                <p id="catDate"></p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "YvF95f3Jw4Je2bd-A",
-            });
-        })();
-    </script>
     <script src="js/main.js"></script>
+    <script src="js/cats.js"></script>
 </body>
 
 </html>
