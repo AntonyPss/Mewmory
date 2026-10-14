@@ -1,7 +1,38 @@
+(() => {
+"use strict";
 // Menu toggle
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
 const menuIcon = menuToggle.querySelector("i");
+
+// Tema claro/oscuro: conserva la elección del usuario.
+const themeToggle = document.getElementById("themeToggle");
+const themeIcon = themeToggle?.querySelector("i");
+
+const updateThemeToggle = () => {
+    if (!themeToggle || !themeIcon) return;
+    const isDark = document.documentElement.dataset.theme === "dark";
+    themeToggle.setAttribute("aria-pressed", String(isDark));
+    themeToggle.setAttribute("aria-label", isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro");
+    themeToggle.title = isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro";
+    themeIcon.classList.toggle("ri-sun-line", isDark);
+    themeIcon.classList.toggle("ri-moon-line", !isDark);
+};
+
+updateThemeToggle();
+
+if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+        const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = nextTheme;
+        try {
+            localStorage.setItem("mewmory-theme", nextTheme);
+        } catch {
+            // El tema sigue funcionando aunque el navegador bloquee el almacenamiento.
+        }
+        updateThemeToggle();
+    });
+}
 
 menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
@@ -55,3 +86,5 @@ catButton.addEventListener("click", () => {
         catMessage.style.display = "none";
     }
 });
+})();
+
