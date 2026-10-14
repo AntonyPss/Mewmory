@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 
@@ -251,4 +252,259 @@
     <script src="js/cats.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Mewmory - Inicio</title>
+
+    <meta name="description"
+        content="Mewmory es una aplicación web para compartir fotos de tus gatos y crear recuerdos inolvidables.">
+    <meta name="keywords" content="mewmory, gatos, recuerdos, fotos, favoritos">
+    <meta property="og:title" content="Mewmory - Inicio">
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="images/icons/favicon.webp" type="image/webp">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header" role="banner">
+        <div class="header-content container">
+            <!-- Logo -->
+            <a href="#" class="nav-logo" title="Mewmory" role="link">
+                <img src="assets/icons/logo.webp" alt="Logo">
+            </a>
+
+            <!-- Navigation -->
+            <div id="navMenu" class="navigation-content" role="navigation">
+                <!-- Navigation Links -->
+                <nav class="nav-links" role="navigation" aria-label="Main Navigation">
+                    <a href="#home" class="nav-link" title="Inicio">Inicio</a>
+                    <a href="#cats" class="nav-link" title="Gatos">Gatos</a>
+                    <a href="#curiosities" class="nav-link" title="Curiosidades">Curiosidades</a>
+                    <a href="#care" class="nav-link" title="Cuidados">Cuidados</a>
+                </nav>
+
+                <!-- Contact Me -->
+                <div class="nav-buttons" role="menubar">
+                    <a href="#contact" class="menu-item contact-button" title="Contactame" role="menuitem">
+                        Contáctame
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-icon" id="menuToggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="home" class="main" role="main" aria-label="Inicio de la aplicación">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content container">
+                <h1>Un nuevo comienzo empieza con un miau <i class="ri-heart-3-fill"></i></h1>
+
+                <p>Cientos de gatos rescatados esperan una segunda oportunidad. Encuentra a tu compañero de vida y
+                    transforma su futuro hoy
+                    mismo.</p>
+
+                <div class="hero-btns">
+                    <a href="#cats" class="hero-button btn-primary" title="Ver gatos">
+                        <i class="ri-service-fill"></i>
+                        Ver gatos
+                    </a>
+
+                    <a href="#about" class="hero-button btn-secondary" title="Explorar más">
+                        <i class="ri-information-line"></i>
+                        Explorar más
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section" role="region" aria-label="Sobre Mewmory">
+            <img src="assets/icons/yo.png" alt="Antony" class="about-image" width="200">
+            <div class="about-content">
+                <h2>Acerca de mí</h2>
+                <p>Soy un desarrollador web apasionado por crear interfaces limpias, amante de gatos e interesado en la
+                    tecnología. Mi objetivo es fusionar el desarrollo web con el bienestar animal para ayudar en la
+                    adopción de gatitos.</p>
+            </div>
+        </section>
+
+        <!-- All Cats -->
+        <section id="cats" class="cats-section container" role="grid">
+            <h2 class="section-title">Nuestros Gatos</h2>
+            <p class="section-description">Descubre nuestra lista de gatos disponibles para la adopción. Cada uno tiene
+                una historia única.</p>
+            <div id="cats-grid" class="cats-grid">
+                <!-- Cat Cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Curiosities Section -->
+        <section id="curiosities" class="curiosities-section container">
+            <h2 class="section-title">Curiosidades Felinas</h2>
+            <p class="section-description">Datos fascinantes sobre nuestros amigos.</p>
+            <div id="curiosities-grid" class="curiosities-grid">
+                <!-- Curiosity Cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Cuidados Section -->
+        <section id="care" class="care-section container" role="region" aria-label="Cuidados básicos para gatos">
+            <h2 class="section-title">Cuidados Básicos</h2>
+            <p class="section-description">Lo que tu michi necesita para una vida plena y saludable.</p>
+            <div class="care-grid">
+                <article class="care-card">
+                    <div class="care-icon-container color-peach">
+                        <i class="ri-restaurant-line"></i>
+                    </div>
+                    <h3>Alimentación</h3>
+                    <p>Proporciona una dieta equilibrada y asegúrate de que siempre tenga <strong>agua
+                            fresca</strong> a su
+                        disposición.</p>
+                </article>
+
+                <article class="care-card">
+                    <div class="care-icon-container color-teal">
+                        <i class="ri-heart-pulse-line"></i>
+                    </div>
+                    <h3>Salud Preventiva</h3>
+                    <p>Mantén sus vacunas al día y realiza visitas periódicas al veterinario para detectar cualquier
+                        cambio.
+                    </p>
+                </article>
+
+                <article class="care-card">
+                    <div class="care-icon-container color-lilac">
+                        <i class="ri-sparkling-line"></i>
+                    </div>
+                    <h3>Higiene</h3>
+                    <p>El arenero debe estar siempre limpio. Un gato aseado es un gato feliz y libre de estrés.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact-section container">
+            <h2 class="section-title">Contáctame</h2>
+            <p class="section-description">¿Tienes preguntas, sugerencias o simplemente quieres saludar? ¡Estoy aquí
+                para escucharte!</p>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">¿Cómo te llamas?</label>
+                        <input type="text" id="name" placeholder="Tu nombre o el de tu gato" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Tu correo</label>
+                        <input type="email" id="email" placeholder="michi-lover@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto gatuno</label>
+                        <select id="subject">
+                            <option value="curiosidad">Tengo una curiosidad nueva</option>
+                            <option value="consejo">Busco un consejo</option>
+                            <option value="historia">Quiero contarte una historia</option>
+                            <option value="otro">Solo quiero saludar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Cuéntame...</label>
+                        <textarea id="message" rows="5" placeholder="Escribe aquí tu mensaje felino..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">
+                        Enviar mensaje <i class="ri-send-plane-fill"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="cat-icon">
+        <span id="catMessage" class="cat-icon-text"></span>
+        <a id="catButton" href="#home" class="cat-icon-btn">😺</a>
+    </div>
+
+    <div class="status-banner">
+        <p><i class="ri-hammer-line"></i> Página en construcción: pronto más novedades gatunas</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/icons/logo.webp" alt="Mewmory Logo" class="footer-logo">
+                <p>Creando recuerdos inolvidables junto a nuestros amigos felinos.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#cats">Gatos</a></li>
+                    <li><a href="#curiosities">Curiosidades</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Redes sociales</h4>
+                <div class="social-icons">
+                    <a href="https://discord.com/@me" title="Discord"><i class="ri-discord-fill"></i></a>
+                    <a href="https://github.com/" title="GitHub"><i class="ri-github-fill"></i></a>
+                    <a href="https://twitter" title="X (Twitter)"><i class="ri-twitter-x-line"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Mewmory. Hecho con <i class="ri-heart-3-fill"></i> por Antony.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cat-modal-overlay" class="cat-modal-overlay" aria-hidden="true">
+        <div class="cat-modal" role="dialog" aria-modal="true" aria-labelledby="cat-modal-title">
+            <button id="cat-modal-close" class="cat-modal-close" aria-label="Cerrar ventana">
+                <i class="ri-close-line"></i>
+            </button>
+
+            <div class="cat-modal-image-wrapper">
+                <img id="cat-modal-image" src="" alt="" class="cat-modal-image">
+            </div>
+
+            <div class="cat-modal-content">
+                <span class="cat-modal-status" id="cat-modal-status"></span>
+                <h3 id="cat-modal-title" class="cat-modal-title"></h3>
+                <p class="cat-modal-age" id="cat-modal-age"></p>
+                <p class="cat-modal-description" id="cat-modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cats.js"></script>
+</body>
+
+>>>>>>> 3f259a2fd3ea77fbe86c280df0e5098db5e711fc
 </html>
