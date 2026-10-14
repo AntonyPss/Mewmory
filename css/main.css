@@ -915,7 +915,7 @@ button {
     box-shadow: var(--shadow-soft);
 }
 
-.community-panel > h3 {
+.community-panel>h3 {
     display: flex;
     align-items: center;
     gap: var(--space-sm);
@@ -924,7 +924,7 @@ button {
     font-size: var(--fs-lg);
 }
 
-.community-panel > h3 i {
+.community-panel>h3 i {
     color: var(--text-accent);
 }
 
@@ -942,7 +942,7 @@ button {
     background: var(--color-bg);
 }
 
-.community-photo-card > img {
+.community-photo-card>img {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
@@ -971,7 +971,7 @@ button {
     gap: var(--space-md);
 }
 
-.community-story-card p + p {
+.community-story-card p+p {
     margin-top: var(--space-sm);
 }
 
@@ -1037,7 +1037,7 @@ body.modal-open {
     -webkit-user-select: none;
 }
 
-body.modal-open > :not(#cat-modal-overlay) {
+body.modal-open> :not(#cat-modal-overlay) {
     pointer-events: none;
 }
 
@@ -1090,26 +1090,51 @@ body.modal-open > :not(#cat-modal-overlay) {
 }
 
 @keyframes modal-backdrop-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes modal-backdrop-out {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 @keyframes modal-panel-in {
-    from { opacity: 0; transform: translateY(8px) scale(0.985); }
-    to { opacity: 1; transform: translateY(0) scale(1); }
+    from {
+        opacity: 0;
+        transform: translateY(8px) scale(0.985);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 @keyframes modal-panel-out {
-    from { opacity: 1; transform: translateY(0) scale(1); }
-    to { opacity: 0; transform: translateY(5px) scale(0.99); }
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(5px) scale(0.99);
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     .cat-modal-overlay.active,
     .cat-modal-overlay.closing,
     .cat-modal-overlay.active .cat-modal,
@@ -1222,10 +1247,24 @@ body.modal-open > :not(#cat-modal-overlay) {
 }
 
 .cat-modal-story {
-    padding: var(--space-md);
+    display: flex;
+    gap: 10px;
+}
+
+.cat-modal-story .left-side,
+.cat-modal-story .right-side {
     border: 1px solid var(--color-surface-2);
     border-radius: var(--radius-medium);
     background: var(--color-bg);
+    padding: var(--space-md);
+}
+
+.cat-modal-story .left-side {
+    width: 50%;
+}
+
+.cat-modal-story .right-side {
+    width: 50%;
 }
 
 .cat-modal-story h4 {
