@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Mewmory - Inicio</title>
+    <title data-i18n="pageTitle">Mewmory - Inicio</title>
+    <meta name="description"
+        content="Cuaderno felino personal: mis gatos, curiosidades y cuidados básicos para quienes quieren aprender a cuidarlos mejor."
+        data-i18n-content="metaDescription">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mewmory.vercel.app/">
-    <meta property="og:title" content="Mewmory - Un rincón para los que amamos a los gatos">
+    <meta property="og:title" content="Mewmory - Un rincón para los que amamos a los gatos" data-i18n-content="metaTitle">
     <meta property="og:description"
-        content="Cuaderno felino personal: mis gatos, curiosidades y cuidados básicos para quienes quieren aprender a cuidarlos mejor.">
+        content="Cuaderno felino personal: mis gatos, curiosidades y cuidados básicos para quienes quieren aprender a cuidarlos mejor."
+        data-i18n-content="metaDescription">
     <meta property="og:image" content="https://mewmory.vercel.app/assets/images/og-banner.webp">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="450">
-    <meta property="og:image:alt" content="Mewmory, un espacio para amantes de los gatos">
-    <meta property="og:locale" content="es_ES">
+    <meta property="og:image:alt" content="Mewmory, un espacio para amantes de los gatos" data-i18n-content="metaImageAlt">
+    <meta property="og:locale" content="es_ES" data-i18n-content="metaLocale">
     
     <!-- Twitter / X (usa las mismas etiquetas si no pones las específicas) -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mewmory - Un rincón para los que amamos a los gatos">
+    <meta name="twitter:title" content="Mewmory - Un rincón para los que amamos a los gatos" data-i18n-content="metaTitle">
     <meta name="twitter:description"
-        content="Cuaderno felino personal: mis gatos, curiosidades y cuidados básicos para quienes quieren aprender a cuidarlos mejor.">
+        content="Cuaderno felino personal: mis gatos, curiosidades y cuidados básicos para quienes quieren aprender a cuidarlos mejor."
+        data-i18n-content="metaDescription">
     <meta name="twitter:image" content="https://mewmory.vercel.app/assets/images/og-banner.webp">
 
     <script>
@@ -59,23 +63,27 @@
 
             <!-- Navigation -->
             <div id="navMenu" class="navigation-content" role="navigation">
-                <nav class="nav-links" aria-label="Navegación principal">
-                    <a href="#home" class="nav-link" title="Inicio">Inicio</a>
-                    <a href="#cats" class="nav-link" title="Mis gatos">Mis gatos</a>
-                    <a href="#community" class="nav-link" title="Comunidad gatuna">Comunidad</a>
-                    <a href="#curiosities" class="nav-link" title="Curiosidades">Curiosidades</a>
-                    <a href="#care" class="nav-link" title="Cuidados">Cuidados</a>
-                    <a href="#food" class="nav-link" title="Comidas">Comidas</a>
+                <nav class="nav-links" aria-label="Navegación principal" data-i18n-aria-label="navigationLabel">
+                    <a href="#home" class="nav-link" title="Inicio" data-i18n-title="home" data-i18n="home">Inicio</a>
+                    <a href="#cats" class="nav-link" title="Mis gatos" data-i18n-title="catsNav" data-i18n="catsNav">Mis gatos</a>
+                    <a href="#community" class="nav-link" title="Comunidad gatuna" data-i18n-title="communityNav" data-i18n="communityNav">Comunidad</a>
+                    <a href="#curiosities" class="nav-link" title="Curiosidades" data-i18n-title="curiositiesNav" data-i18n="curiositiesNav">Curiosidades</a>
+                    <a href="#care" class="nav-link" title="Cuidados" data-i18n-title="careNav" data-i18n="careNav">Cuidados</a>
+                    <a href="#food" class="nav-link" title="Comidas" data-i18n-title="foodNav" data-i18n="foodNav">Comidas</a>
                 </nav>
 
-                <div class="nav-buttons" role="menubar">
-                    <a href="#contact" class="menu-item contact-button" title="Contáctame" role="menuitem">
+                <div class="nav-buttons">
+                    <a href="#contact" class="menu-item contact-button" title="Contáctame"
+                        data-i18n-title="contactNav" data-i18n="contactNav">
                         Contáctame
                     </a>
-                    <button class="theme-toggle" id="themeToggle" type="button" role="menuitem" aria-pressed="false"
-                        aria-label="Cambiar a modo oscuro" title="Cambiar a modo oscuro">
-                        <i class="ri-moon-line" aria-hidden="true"></i>
-                    </button>
+                    <div class="locale-controls">
+                        <button class="language-toggle" id="languageToggle" type="button" aria-label="Cambiar idioma a inglés" title="Cambiar idioma a inglés">EN</button>
+                        <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false"
+                            aria-label="Cambiar a modo oscuro" title="Cambiar a modo oscuro">
+                            <i class="ri-moon-line" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -87,12 +95,12 @@
     </header>
 
     <!-- Main Content -->
-    <main id="home" class="main" role="main" aria-label="Inicio de la aplicación">
+    <main id="home" class="main" role="main" aria-label="Inicio de la aplicación" data-i18n-aria-label="mainContentLabel">
 
         <!-- ============================
              HERO
              ============================ -->
-        <section class="hero hero-compact" aria-label="Inicio">
+        <section class="hero hero-compact" aria-label="Inicio" data-i18n-aria-label="home">
             <div class="carousel" aria-hidden="true">
                 <img id="hero-carousel-image"
                     src="https://static.nationalgeographicla.com/files/styles/image_3200/public/nationalgeographic1353290.webp?w=1600&amp;h=1067&amp;q=100"
@@ -100,17 +108,16 @@
             </div>
 
             <div class="hero-content container">
-                <span class="hero-eyebrow">🐾 Proyecto personal felino</span>
-                <h1>Un rincón para los que amamos a los gatos <i class="ri-heart-3-fill"></i></h1>
-                <p>Bienvenido a <strong>Mewmory</strong>, mi espacio para compartir la vida con mis gatos, datos
-                    curiosos y guías básicas para quienes quieren aprender a cuidarlos mejor.</p>
+                <span class="hero-eyebrow" data-i18n="heroEyebrow">🐾 Proyecto personal felino</span>
+                <h1><span data-i18n="heroTitle">Un rincón para los que amamos a los gatos</span> <i class="ri-heart-3-fill"></i></h1>
+                <p><span data-i18n="heroDescriptionStart">Bienvenido a</span> <strong>Mewmory</strong><span data-i18n="heroDescriptionEnd">, mi espacio para compartir la vida con mis gatos, datos curiosos y guías básicas para quienes quieren aprender a cuidarlos mejor.</span></p>
 
                 <div class="hero-btns">
-                    <a href="#cats" class="hero-button btn-primary" title="Conoce a mis gatos">
-                        <i class="ri-service-fill"></i> Conoce a mis gatos
+                    <a href="#cats" class="hero-button btn-primary" title="Conoce a mis gatos" data-i18n-title="heroCats">
+                        <i class="ri-service-fill"></i> <span data-i18n="heroCats">Conoce a mis gatos</span>
                     </a>
-                    <a href="#care" class="hero-button btn-secondary" title="Aprende a cuidarlos">
-                        <i class="ri-book-open-line"></i> Aprende a cuidarlos
+                    <a href="#care" class="hero-button btn-secondary" title="Aprende a cuidarlos" data-i18n-title="heroCare">
+                        <i class="ri-book-open-line"></i> <span data-i18n="heroCare">Aprende a cuidarlos</span>
                     </a>
                 </div>
             </div>
@@ -119,25 +126,21 @@
         <!-- ============================
              ABOUT (discreto)
              ============================ -->
-        <section id="about" class="about-section about-compact" role="region" aria-label="Sobre Mewmory">
-            <img src="assets/icons/yo.png" alt="Antony, creador de Mewmory" class="about-image" width="120" height="120"
+        <section id="about" class="about-section about-compact" role="region" aria-label="Sobre Mewmory" data-i18n-aria-label="aboutTitle">
+            <img src="assets/icons/yo.png" alt="Antony, creador de Mewmory" data-i18n-alt="aboutPhotoAlt" class="about-image" width="120" height="120"
                 decoding="async">
             <div class="about-content">
-                <h2>¿Quién está detrás de Mewmory?</h2>
-                <p>Soy <strong>Antony</strong>, desarrollador web y amante de los gatos. Creé este espacio para
-                    documentar la vida con mis michis y, de paso, compartir lo que he aprendido sobre su cuidado con
-                    quienes están empezando. No es un refugio ni un sitio de adopción: es mi cuaderno felino personal.
-                </p>
+                <h2 data-i18n="aboutTitle">¿Quién está detrás de Mewmory?</h2>
+                <p><span data-i18n="aboutDescriptionStart">Soy</span> <strong>Antony</strong><span data-i18n="aboutDescriptionEnd">, desarrollador web y amante de los gatos. Creé este espacio para documentar la vida con mis michis y, de paso, compartir lo que he aprendido sobre su cuidado con quienes están empezando. No es un refugio ni un sitio de adopción: es mi cuaderno felino personal.</span></p>
             </div>
         </section>
 
         <!-- ============================
              MIS GATOS
              ============================ -->
-        <section id="cats" class="cats-section container" role="region" aria-label="Mis gatos">
-            <h2 class="section-title">Mis gatos</h2>
-            <p class="section-description">Estos son los michis que comparten mi vida. Cada uno con su propia
-                personalidad, mañas y momentos favoritos.</p>
+        <section id="cats" class="cats-section container" role="region" aria-label="Mis gatos" data-i18n-aria-label="catsNav">
+            <h2 class="section-title" data-i18n="catsNav">Mis gatos</h2>
+            <p class="section-description" data-i18n="catsDescription">Estos son los michis que comparten mi vida. Cada uno con su propia personalidad, mañas y momentos favoritos.</p>
             <div id="cats-grid" class="cats-grid">
                 <!-- Cat Cards se insertan dinámicamente desde js/cats.js -->
             </div>
@@ -147,35 +150,32 @@
              COMUNIDAD GATUNA
              ============================ -->
         <section id="community" class="community-section container" aria-labelledby="community-title">
-            <h2 id="community-title" class="section-title">Comunidad gatuna</h2>
-            <p class="section-description">Un espacio para conocer a otros michis y descubrir sus historias.</p>
+            <h2 id="community-title" class="section-title" data-i18n="communityTitle">Comunidad gatuna</h2>
+            <p class="section-description" data-i18n="communityDescription">Un espacio para conocer a otros michis y descubrir sus historias.</p>
 
             <div class="community-grid">
                 <section class="community-panel" aria-labelledby="community-photos-title">
-                    <h3 id="community-photos-title"><i class="ri-image-line" aria-hidden="true"></i> Fotos de la
-                        comunidad</h3>
+                    <h3 id="community-photos-title"><i class="ri-image-line" aria-hidden="true"></i> <span data-i18n="communityPhotosTitle">Fotos de la comunidad</span></h3>
                     <div id="community-photo-grid" class="community-photo-grid"></div>
                 </section>
 
                 <section class="community-panel" aria-labelledby="community-stories-title">
-                    <h3 id="community-stories-title"><i class="ri-book-open-line" aria-hidden="true"></i> Historias
-                        felinas</h3>
+                    <h3 id="community-stories-title"><i class="ri-book-open-line" aria-hidden="true"></i> <span data-i18n="communityStoriesTitle">Historias felinas</span></h3>
                     <div id="community-story-list" class="community-story-list"></div>
                 </section>
             </div>
 
-            <p class="community-invitation">¿Quieres compartir una historia sobre tu gato?
-                <a href="#contact">Cuéntamela aquí</a>.
+            <p class="community-invitation"><span data-i18n="communityInvitationStart">¿Quieres compartir una historia sobre tu gato?</span>
+                <a href="#contact" data-i18n="communityInvitationLink">Cuéntamela aquí</a>.
             </p>
         </section>
 
         <!-- ============================
              CURIOSIDADES
              ============================ -->
-        <section id="curiosities" class="curiosities-section container" aria-label="Datos curiosos sobre gatos">
-            <h2 class="section-title">Curiosidades felinas</h2>
-            <p class="section-description">Datos fascinantes que quizá no sabías sobre nuestros compañeros bigotudos.
-            </p>
+        <section id="curiosities" class="curiosities-section container" aria-label="Datos curiosos sobre gatos" data-i18n-aria-label="curiositiesTitle">
+            <h2 class="section-title" data-i18n="curiositiesTitle">Curiosidades felinas</h2>
+            <p class="section-description" data-i18n="curiositiesDescription">Datos fascinantes que quizá no sabías sobre nuestros compañeros bigotudos.</p>
 
             <div id="curiosities-grid" class="curiosities-grid">
                 <!-- Curiosity cards se insertan desde js/sections.js -->
@@ -185,9 +185,9 @@
         <!-- ============================
              CUIDADOS BÁSICOS
              ============================ -->
-        <section id="care" class="care-section container" role="region" aria-label="Cuidados básicos para gatos">
-            <h2 class="section-title">Cuidados básicos</h2>
-            <p class="section-description">Lo esencial que todo gato necesita para vivir sano, seguro y feliz.</p>
+        <section id="care" class="care-section container" role="region" aria-label="Cuidados básicos para gatos" data-i18n-aria-label="careTitle">
+            <h2 class="section-title" data-i18n="careTitle">Cuidados básicos</h2>
+            <p class="section-description" data-i18n="careDescription">Lo esencial que todo gato necesita para vivir sano, seguro y feliz.</p>
 
             <div id="care-grid" class="care-grid">
                 <!-- Care cards se insertan desde js/sections.js -->
@@ -197,52 +197,52 @@
         <!-- ============================
              COMIDAS RECOMENDADAS
              ============================ -->
-        <section id="food" class="food-section container" role="region" aria-label="Comidas recomendadas">
-            <h2 class="section-title">Comidas recomendadas</h2>
-            <p class="section-description">Qué sí, qué no y qué evitar. Guía básica para alimentar bien a tu gato.</p>
+        <section id="food" class="food-section container" role="region" aria-label="Comidas recomendadas" data-i18n-aria-label="foodTitle">
+            <h2 class="section-title" data-i18n="foodTitle">Comidas recomendadas</h2>
+            <p class="section-description" data-i18n="foodDescription">Qué sí, qué no y qué evitar. Guía básica para alimentar bien a tu gato.</p>
 
             <div class="food-grid">
                 <article class="food-card food-ok">
                     <div class="food-header">
                         <i class="ri-checkbox-circle-fill"></i>
-                        <h3>Sí darle</h3>
+                        <h3 data-i18n="foodYesTitle">Sí darle</h3>
                     </div>
                     <ul>
-                        <li>Pienso de alta calidad específico para su etapa de vida.</li>
-                        <li>Comida húmeda (lata o sobre) al menos una vez al día.</li>
-                        <li>Pollo cocido sin sal ni huesos, como premio ocasional.</li>
-                        <li>Atún en agua, muy esporádicamente y sin aceite.</li>
-                        <li>Caldo de pollo sin sal ni cebolla.</li>
-                        <li>Hierba gatera (catnip) en pequeñas cantidades.</li>
+                        <li data-i18n="foodYes1">Pienso de alta calidad específico para su etapa de vida.</li>
+                        <li data-i18n="foodYes2">Comida húmeda (lata o sobre) al menos una vez al día.</li>
+                        <li data-i18n="foodYes3">Pollo cocido sin sal ni huesos, como premio ocasional.</li>
+                        <li data-i18n="foodYes4">Atún en agua, muy esporádicamente y sin aceite.</li>
+                        <li data-i18n="foodYes5">Caldo de pollo sin sal ni cebolla.</li>
+                        <li data-i18n="foodYes6">Hierba gatera (catnip) en pequeñas cantidades.</li>
                     </ul>
                 </article>
 
                 <article class="food-card food-warn">
                     <div class="food-header">
                         <i class="ri-error-warning-fill"></i>
-                        <h3>Con moderación</h3>
+                        <h3 data-i18n="foodModerationTitle">Con moderación</h3>
                     </div>
                     <ul>
-                        <li>Snacks comerciales (no más del 10% de la dieta diaria).</li>
-                        <li>Queso y lácteos: muchos gatos son intolerantes a la lactosa.</li>
-                        <li>Huevo cocido, máximo una vez por semana.</li>
-                        <li>Vegetales cocidos como calabacín o zanahoria, en trozos pequeños.</li>
+                        <li data-i18n="foodModeration1">Snacks comerciales (no más del 10% de la dieta diaria).</li>
+                        <li data-i18n="foodModeration2">Queso y lácteos: muchos gatos son intolerantes a la lactosa.</li>
+                        <li data-i18n="foodModeration3">Huevo cocido, máximo una vez por semana.</li>
+                        <li data-i18n="foodModeration4">Vegetales cocidos como calabacín o zanahoria, en trozos pequeños.</li>
                     </ul>
                 </article>
 
                 <article class="food-card food-no">
                     <div class="food-header">
                         <i class="ri-close-circle-fill"></i>
-                        <h3>Nunca darle</h3>
+                        <h3 data-i18n="foodNeverTitle">Nunca darle</h3>
                     </div>
                     <ul>
-                        <li><strong>Cebolla y ajo</strong>: destruyen los glóbulos rojos.</li>
-                        <li><strong>Chocolate</strong>: tóxico por la teobromina.</li>
-                        <li><strong>Uvas y pasas</strong>: pueden causar fallo renal.</li>
-                        <li><strong>Alcohol y cafeína</strong>: muy peligrosos.</li>
-                        <li><strong>Huesos cocidos</strong>: se astillan y perforan.</li>
-                        <li><strong>Lácteos en exceso</strong>: diarrea y malestar.</li>
-                        <li><strong>Pescado crudo</strong>: riesgo de parásitos y deficiencia de tiamina.</li>
+                        <li data-i18n-html="foodNever1"><strong>Cebolla y ajo</strong>: destruyen los glóbulos rojos.</li>
+                        <li data-i18n-html="foodNever2"><strong>Chocolate</strong>: tóxico por la teobromina.</li>
+                        <li data-i18n-html="foodNever3"><strong>Uvas y pasas</strong>: pueden causar fallo renal.</li>
+                        <li data-i18n-html="foodNever4"><strong>Alcohol y cafeína</strong>: muy peligrosos.</li>
+                        <li data-i18n-html="foodNever5"><strong>Huesos cocidos</strong>: se astillan y perforan.</li>
+                        <li data-i18n-html="foodNever6"><strong>Lácteos en exceso</strong>: diarrea y malestar.</li>
+                        <li data-i18n-html="foodNever7"><strong>Pescado crudo</strong>: riesgo de parásitos y deficiencia de tiamina.</li>
                     </ul>
                 </article>
             </div>
@@ -252,45 +252,45 @@
              CONTACTO
              ============================ -->
         <section id="contact" class="contact-section container">
-            <h2 class="section-title">Contáctame</h2>
-            <p class="section-description">¿Tienes preguntas, sugerencias o quieres compartir fotos de tus gatos?
-                Escríbeme.</p>
+            <h2 class="section-title" data-i18n="contactTitle">Contáctame</h2>
+            <p class="section-description"><span data-i18n="contactDescriptionStart">¿Tienes preguntas, sugerencias o quieres compartir fotos de tus gatos?</span>
+                <span data-i18n="contactDescriptionEnd">Escríbeme.</span></p>
 
             <div class="contact-container">
                 <form id="contact-form" class="contact-form" action="https://formspree.io/f/mdeawbrw" method="POST">
                     <div class="form-group">
-                        <label for="name">¿Cómo te llamas?</label>
-                        <input type="text" id="name" name="nombre" placeholder="Tu nombre o el de tu gato" data-fs-field
+                        <label for="name" data-i18n="formNameLabel">¿Cómo te llamas?</label>
+                        <input type="text" id="name" name="nombre" placeholder="Tu nombre o el de tu gato" data-i18n-placeholder="formNamePlaceholder" data-fs-field
                             required>
                         <span class="form-field-error" data-fs-error="nombre"></span>
                     </div>
                     <div class="form-group">
-                        <label for="email">Tu correo</label>
-                        <input type="email" id="email" name="email" placeholder="michi-lover@email.com" data-fs-field
+                        <label for="email" data-i18n="formEmailLabel">Tu correo</label>
+                        <input type="email" id="email" name="email" placeholder="michi-lover@email.com" data-i18n-placeholder="formEmailPlaceholder" data-fs-field
                             required>
                         <span class="form-field-error" data-fs-error="email"></span>
                     </div>
                     <div class="form-group">
-                        <label for="subject">Asunto gatuno</label>
+                        <label for="subject" data-i18n="formSubjectLabel">Asunto gatuno</label>
                         <select id="subject" name="asunto" data-fs-field>
-                            <option value="curiosidad">Tengo una curiosidad nueva</option>
-                            <option value="consejo">Busco un consejo</option>
-                            <option value="historia">Quiero contarte una historia</option>
-                            <option value="otro">Solo quiero saludar</option>
+                            <option value="curiosidad" data-i18n="formSubjectOption1">Tengo una curiosidad nueva</option>
+                            <option value="consejo" data-i18n="formSubjectOption2">Busco un consejo</option>
+                            <option value="historia" data-i18n="formSubjectOption3">Quiero contarte una historia</option>
+                            <option value="otro" data-i18n="formSubjectOption4">Solo quiero saludar</option>
                         </select>
                         <span class="form-field-error" data-fs-error="asunto"></span>
                     </div>
                     <div class="form-group">
-                        <label for="message">Cuéntame...</label>
-                        <textarea id="message" name="mensaje" rows="5" placeholder="Escribe aquí tu mensaje felino..."
+                        <label for="message" data-i18n="formMessageLabel">Cuéntame...</label>
+                        <textarea id="message" name="mensaje" rows="5" placeholder="Escribe aquí tu mensaje felino..." data-i18n-placeholder="formMessagePlaceholder"
                             data-fs-field required></textarea>
                         <span class="form-field-error" data-fs-error="mensaje"></span>
                     </div>
                     <button type="submit" class="btn-primary btn-full" data-fs-submit-btn>
-                        Enviar mensaje <i class="ri-send-plane-fill"></i>
+                        <span data-i18n="formSubmit">Enviar mensaje</span> <i class="ri-send-plane-fill"></i>
                     </button>
                     <p class="form-status form-status-success" data-fs-success role="status" aria-live="polite">
-                        ¡Gracias! Tu mensaje se envió correctamente.
+                        <span data-i18n="formSuccess">¡Gracias! Tu mensaje se envió correctamente.</span>
                     </p>
                     <p class="form-status form-status-error" data-fs-error="" role="alert" aria-live="assertive"></p>
                 </form>
@@ -302,12 +302,12 @@
     <!-- Botón flotante -->
     <div class="cat-icon">
         <span id="catMessage" class="cat-icon-text"></span>
-        <a id="catButton" href="#home" class="cat-icon-btn" aria-label="Volver arriba">😺</a>
+        <a id="catButton" href="#home" class="cat-icon-btn" aria-label="Volver arriba" data-i18n-aria-label="backToTop">😺</a>
     </div>
 
     <!-- Aviso de construcción -->
     <div class="status-banner">
-        <p><i class="ri-hammer-line"></i> Página en construcción: pronto más novedades gatunas</p>
+        <p><i class="ri-hammer-line"></i> <span data-i18n="constructionBanner">Página en construcción: pronto más novedades gatunas</span></p>
     </div>
 
     <!-- ============================
@@ -316,13 +316,12 @@
     <footer class="main-footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                <img src="assets/icons/logo.webp" alt="Mewmory Logo" class="footer-logo" loading="lazy"
+                <img src="assets/icons/logo.webp" alt="Mewmory Logo" data-i18n-alt="logoAlt" class="footer-logo" loading="lazy"
                     decoding="async">
-                <p>Un cuaderno felino personal donde comparto la vida con mis gatos, datos curiosos y guías básicas de
-                    cuidado.</p>
+                <p data-i18n="footerDescription">Un cuaderno felino personal donde comparto la vida con mis gatos, datos curiosos y guías básicas de cuidado.</p>
 
                 <div class="footer-social">
-                    <h4>Sígueme</h4>
+                    <h4 data-i18n="footerFollow">Sígueme</h4>
                     <div class="social-icons">
                         <a href="https://discord.com/@me" title="Discord" aria-label="Discord"><i
                                 class="ri-discord-fill"></i></a>
@@ -335,27 +334,27 @@
             </div>
 
             <div class="footer-links">
-                <h4>Explora</h4>
+                <h4 data-i18n="footerExplore">Explora</h4>
                 <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Sobre Mewmory</a></li>
-                    <li><a href="#cats">Mis gatos</a></li>
-                    <li><a href="#community">Comunidad gatuna</a></li>
-                    <li><a href="#curiosities">Curiosidades</a></li>
+                    <li><a href="#home" data-i18n="home">Inicio</a></li>
+                    <li><a href="#about" data-i18n="aboutNav">Sobre Mewmory</a></li>
+                    <li><a href="#cats" data-i18n="catsNav">Mis gatos</a></li>
+                    <li><a href="#community" data-i18n="communityNav">Comunidad gatuna</a></li>
+                    <li><a href="#curiosities" data-i18n="curiositiesNav">Curiosidades</a></li>
                 </ul>
             </div>
 
             <div class="footer-links">
-                <h4>Aprende</h4>
+                <h4 data-i18n="footerLearn">Aprende</h4>
                 <ul>
-                    <li><a href="#care">Cuidados básicos</a></li>
-                    <li><a href="#food">Comidas recomendadas</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#care" data-i18n="careTitle">Cuidados básicos</a></li>
+                    <li><a href="#food" data-i18n="foodTitle">Comidas recomendadas</a></li>
+                    <li><a href="#contact" data-i18n="contactFooter">Contacto</a></li>
                 </ul>
             </div>
 
             <div class="footer-links">
-                <h4>Recursos externos</h4>
+                <h4 data-i18n="footerResources">Recursos externos</h4>
                 <ul>
                     <li><a href="https://www.cornell.edu/" target="_blank" rel="noopener">Cornell Feline Health</a></li>
                     <li><a href="https://www.idpyba.gov.co/" target="_blank" rel="noopener">IDPYBA Bogotá</a></li>
@@ -367,8 +366,7 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p>© 2026 Mewmory · Hecho con <i class="ri-heart-3-fill"></i> por Antony · Proyecto personal sin fines
-                    de adopción</p>
+                <p><span data-i18n="footerCopyrightStart">© 2026 Mewmory · Hecho con</span> <i class="ri-heart-3-fill"></i> <span data-i18n="footerCopyrightEnd">por Antony · Proyecto personal sin fines de adopción</span></p>
             </div>
         </div>
     </footer>
@@ -381,7 +379,7 @@
                     <h3 id="cat-modal-title" class="cat-modal-title"></h3>
                     <span class="cat-modal-status" id="cat-modal-status"></span>
                 </div>
-                <button id="cat-modal-close" class="cat-modal-close" type="button" aria-label="Cerrar ventana">
+                <button id="cat-modal-close" class="cat-modal-close" type="button" aria-label="Cerrar ventana" data-i18n-aria-label="closeModal">
                     <i class="ri-close-line" aria-hidden="true"></i>
                 </button>
             </header>
@@ -391,19 +389,19 @@
 
             <div class="cat-modal-content">
                 <div class="cat-modal-facts">
-                    <span class="cat-modal-fact"><strong>Raza:</strong> <span id="cat-modal-breed"></span></span>
-                    <span class="cat-modal-fact"><strong>Género:</strong> <span id="cat-modal-gender"></span></span>
-                    <span class="cat-modal-fact"><strong>Peso:</strong> <span id="cat-modal-weight"></span></span>
-                    <span class="cat-modal-fact"><strong>Color:</strong> <span id="cat-modal-color"></span></span>
-                    <span class="cat-modal-fact"><strong>Edad:</strong> <span id="cat-modal-age"></span></span>
+                    <span class="cat-modal-fact"><strong data-i18n="catBreedLabel">Raza:</strong> <span id="cat-modal-breed"></span></span>
+                    <span class="cat-modal-fact"><strong data-i18n="catGenderLabel">Género:</strong> <span id="cat-modal-gender"></span></span>
+                    <span class="cat-modal-fact"><strong data-i18n="catWeightLabel">Peso:</strong> <span id="cat-modal-weight"></span></span>
+                    <span class="cat-modal-fact"><strong data-i18n="catColorLabel">Color:</strong> <span id="cat-modal-color"></span></span>
+                    <span class="cat-modal-fact"><strong data-i18n="catAgeLabel">Edad:</strong> <span id="cat-modal-age"></span></span>
                 </div>
                 <section class="cat-modal-story" aria-labelledby="cat-modal-story-title">
                     <div class="left-side">
-                        <h4 id="cat-modal-story-title">Sobre <span class="cat-modal-name"></span></h4>
+                        <h4 id="cat-modal-story-title"><span data-i18n="catAboutLabel">Sobre </span><span class="cat-modal-name"></span></h4>
                         <p class="cat-modal-description" id="cat-modal-description"></p>
                     </div>
                     <div class="right-side">
-                        <h4>Historia</h4>
+                        <h4 data-i18n="catHistoryLabel">Historia</h4>
                         <p class="cat-modal-description" id="cat-modal-history"></p>
                     </div>
                 </section>
@@ -411,6 +409,7 @@
         </div>
     </div>
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
     <script src="js/cats.js"></script>
     <script src="js/sections.js"></script>
@@ -424,430 +423,3 @@
 </body>
 
 </html>
-=======
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Mewmory - Inicio</title>
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mewmory.vercel.app/">
-    <meta property="og:title" content="Mewmory - Un rincón para los que amamos a los gatos">
-    <meta property="og:description"
-        content="Cuaderno felino personal: mis gatos, curiosidades y cuidados básicos para quienes quieren aprender a cuidarlos mejor.">
-    <meta property="og:image" content="https://mewmory.vercel.app/assets/images/og-banner.webp">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="450">
-    <meta property="og:image:alt" content="Mewmory, un espacio para amantes de los gatos">
-    <meta property="og:locale" content="es_ES">
-    
-    <!-- Twitter / X (usa las mismas etiquetas si no pones las específicas) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mewmory - Un rincón para los que amamos a los gatos">
-    <meta name="twitter:description"
-        content="Cuaderno felino personal: mis gatos, curiosidades y cuidados básicos para quienes quieren aprender a cuidarlos mejor.">
-    <meta name="twitter:image" content="https://mewmory.vercel.app/assets/images/og-banner.webp">
-
-    <script>
-        try {
-            const savedTheme = localStorage.getItem("mewmory-theme");
-            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-            document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
-        } catch {
-            document.documentElement.dataset.theme = "light";
-        }
-    </script>
-
-    <!-- Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="icon" href="assets/icons/icon.webp" type="image/webp">
-</head>
-
-<body>
-    <!-- Header -->
-    <header id="header" class="header" role="banner">
-        <div class="header-content container">
-            <!-- Logo -->
-            <a href="#home" class="nav-logo" title="Mewmory" role="link">
-                <img src="assets/icons/logo.webp" alt="Logo Mewmory">
-            </a>
-
-            <!-- Navigation -->
-            <div id="navMenu" class="navigation-content" role="navigation">
-                <nav class="nav-links" aria-label="Navegación principal">
-                    <a href="#home" class="nav-link" title="Inicio">Inicio</a>
-                    <a href="#cats" class="nav-link" title="Mis gatos">Mis gatos</a>
-                    <a href="#community" class="nav-link" title="Comunidad gatuna">Comunidad</a>
-                    <a href="#curiosities" class="nav-link" title="Curiosidades">Curiosidades</a>
-                    <a href="#care" class="nav-link" title="Cuidados">Cuidados</a>
-                    <a href="#food" class="nav-link" title="Comidas">Comidas</a>
-                </nav>
-
-                <div class="nav-buttons" role="menubar">
-                    <a href="#contact" class="menu-item contact-button" title="Contáctame" role="menuitem">
-                        Contáctame
-                    </a>
-                    <button class="theme-toggle" id="themeToggle" type="button" role="menuitem" aria-pressed="false"
-                        aria-label="Cambiar a modo oscuro" title="Cambiar a modo oscuro">
-                        <i class="ri-moon-line" aria-hidden="true"></i>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Mobile Menu Toggle -->
-            <button class="menu-icon" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
-                <i class="ri-menu-line"></i>
-            </button>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main id="home" class="main" role="main" aria-label="Inicio de la aplicación">
-
-        <!-- ============================
-             HERO
-             ============================ -->
-        <section class="hero hero-compact" aria-label="Inicio">
-            <div class="carousel" aria-hidden="true">
-                <img id="hero-carousel-image"
-                    src="https://static.nationalgeographicla.com/files/styles/image_3200/public/nationalgeographic1353290.webp?w=1600&amp;h=1067&amp;q=100"
-                    alt="" fetchpriority="high" decoding="async">
-            </div>
-
-            <div class="hero-content container">
-                <span class="hero-eyebrow">🐾 Proyecto personal felino</span>
-                <h1>Un rincón para los que amamos a los gatos <i class="ri-heart-3-fill"></i></h1>
-                <p>Bienvenido a <strong>Mewmory</strong>, mi espacio para compartir la vida con mis gatos, datos
-                    curiosos y guías básicas para quienes quieren aprender a cuidarlos mejor.</p>
-
-                <div class="hero-btns">
-                    <a href="#cats" class="hero-button btn-primary" title="Conoce a mis gatos">
-                        <i class="ri-service-fill"></i> Conoce a mis gatos
-                    </a>
-                    <a href="#care" class="hero-button btn-secondary" title="Aprende a cuidarlos">
-                        <i class="ri-book-open-line"></i> Aprende a cuidarlos
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================
-             ABOUT (discreto)
-             ============================ -->
-        <section id="about" class="about-section about-compact" role="region" aria-label="Sobre Mewmory">
-            <img src="assets/icons/yo.png" alt="Antony, creador de Mewmory" class="about-image" width="120" height="120"
-                decoding="async">
-            <div class="about-content">
-                <h2>¿Quién está detrás de Mewmory?</h2>
-                <p>Soy <strong>Antony</strong>, desarrollador web y amante de los gatos. Creé este espacio para
-                    documentar la vida con mis michis y, de paso, compartir lo que he aprendido sobre su cuidado con
-                    quienes están empezando. No es un refugio ni un sitio de adopción: es mi cuaderno felino personal.
-                </p>
-            </div>
-        </section>
-
-        <!-- ============================
-             MIS GATOS
-             ============================ -->
-        <section id="cats" class="cats-section container" role="region" aria-label="Mis gatos">
-            <h2 class="section-title">Mis gatos</h2>
-            <p class="section-description">Estos son los michis que comparten mi vida. Cada uno con su propia
-                personalidad, mañas y momentos favoritos.</p>
-            <div id="cats-grid" class="cats-grid">
-                <!-- Cat Cards se insertan dinámicamente desde js/cats.js -->
-            </div>
-        </section>
-
-        <!-- ============================
-             COMUNIDAD GATUNA
-             ============================ -->
-        <section id="community" class="community-section container" aria-labelledby="community-title">
-            <h2 id="community-title" class="section-title">Comunidad gatuna</h2>
-            <p class="section-description">Un espacio para conocer a otros michis y descubrir sus historias.</p>
-
-            <div class="community-grid">
-                <section class="community-panel" aria-labelledby="community-photos-title">
-                    <h3 id="community-photos-title"><i class="ri-image-line" aria-hidden="true"></i> Fotos de la
-                        comunidad</h3>
-                    <div id="community-photo-grid" class="community-photo-grid"></div>
-                </section>
-
-                <section class="community-panel" aria-labelledby="community-stories-title">
-                    <h3 id="community-stories-title"><i class="ri-book-open-line" aria-hidden="true"></i> Historias
-                        felinas</h3>
-                    <div id="community-story-list" class="community-story-list"></div>
-                </section>
-            </div>
-
-            <p class="community-invitation">¿Quieres compartir una historia sobre tu gato?
-                <a href="#contact">Cuéntamela aquí</a>.
-            </p>
-        </section>
-
-        <!-- ============================
-             CURIOSIDADES
-             ============================ -->
-        <section id="curiosities" class="curiosities-section container" aria-label="Datos curiosos sobre gatos">
-            <h2 class="section-title">Curiosidades felinas</h2>
-            <p class="section-description">Datos fascinantes que quizá no sabías sobre nuestros compañeros bigotudos.
-            </p>
-
-            <div id="curiosities-grid" class="curiosities-grid">
-                <!-- Curiosity cards se insertan desde js/sections.js -->
-            </div>
-        </section>
-
-        <!-- ============================
-             CUIDADOS BÁSICOS
-             ============================ -->
-        <section id="care" class="care-section container" role="region" aria-label="Cuidados básicos para gatos">
-            <h2 class="section-title">Cuidados básicos</h2>
-            <p class="section-description">Lo esencial que todo gato necesita para vivir sano, seguro y feliz.</p>
-
-            <div id="care-grid" class="care-grid">
-                <!-- Care cards se insertan desde js/sections.js -->
-            </div>
-        </section>
-
-        <!-- ============================
-             COMIDAS RECOMENDADAS
-             ============================ -->
-        <section id="food" class="food-section container" role="region" aria-label="Comidas recomendadas">
-            <h2 class="section-title">Comidas recomendadas</h2>
-            <p class="section-description">Qué sí, qué no y qué evitar. Guía básica para alimentar bien a tu gato.</p>
-
-            <div class="food-grid">
-                <article class="food-card food-ok">
-                    <div class="food-header">
-                        <i class="ri-checkbox-circle-fill"></i>
-                        <h3>Sí darle</h3>
-                    </div>
-                    <ul>
-                        <li>Pienso de alta calidad específico para su etapa de vida.</li>
-                        <li>Comida húmeda (lata o sobre) al menos una vez al día.</li>
-                        <li>Pollo cocido sin sal ni huesos, como premio ocasional.</li>
-                        <li>Atún en agua, muy esporádicamente y sin aceite.</li>
-                        <li>Caldo de pollo sin sal ni cebolla.</li>
-                        <li>Hierba gatera (catnip) en pequeñas cantidades.</li>
-                    </ul>
-                </article>
-
-                <article class="food-card food-warn">
-                    <div class="food-header">
-                        <i class="ri-error-warning-fill"></i>
-                        <h3>Con moderación</h3>
-                    </div>
-                    <ul>
-                        <li>Snacks comerciales (no más del 10% de la dieta diaria).</li>
-                        <li>Queso y lácteos: muchos gatos son intolerantes a la lactosa.</li>
-                        <li>Huevo cocido, máximo una vez por semana.</li>
-                        <li>Vegetales cocidos como calabacín o zanahoria, en trozos pequeños.</li>
-                    </ul>
-                </article>
-
-                <article class="food-card food-no">
-                    <div class="food-header">
-                        <i class="ri-close-circle-fill"></i>
-                        <h3>Nunca darle</h3>
-                    </div>
-                    <ul>
-                        <li><strong>Cebolla y ajo</strong>: destruyen los glóbulos rojos.</li>
-                        <li><strong>Chocolate</strong>: tóxico por la teobromina.</li>
-                        <li><strong>Uvas y pasas</strong>: pueden causar fallo renal.</li>
-                        <li><strong>Alcohol y cafeína</strong>: muy peligrosos.</li>
-                        <li><strong>Huesos cocidos</strong>: se astillan y perforan.</li>
-                        <li><strong>Lácteos en exceso</strong>: diarrea y malestar.</li>
-                        <li><strong>Pescado crudo</strong>: riesgo de parásitos y deficiencia de tiamina.</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- ============================
-             CONTACTO
-             ============================ -->
-        <section id="contact" class="contact-section container">
-            <h2 class="section-title">Contáctame</h2>
-            <p class="section-description">¿Tienes preguntas, sugerencias o quieres compartir fotos de tus gatos?
-                Escríbeme.</p>
-
-            <div class="contact-container">
-                <form id="contact-form" class="contact-form" action="https://formspree.io/f/mdeawbrw" method="POST">
-                    <div class="form-group">
-                        <label for="name">¿Cómo te llamas?</label>
-                        <input type="text" id="name" name="nombre" placeholder="Tu nombre o el de tu gato" data-fs-field
-                            required>
-                        <span class="form-field-error" data-fs-error="nombre"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Tu correo</label>
-                        <input type="email" id="email" name="email" placeholder="michi-lover@email.com" data-fs-field
-                            required>
-                        <span class="form-field-error" data-fs-error="email"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Asunto gatuno</label>
-                        <select id="subject" name="asunto" data-fs-field>
-                            <option value="curiosidad">Tengo una curiosidad nueva</option>
-                            <option value="consejo">Busco un consejo</option>
-                            <option value="historia">Quiero contarte una historia</option>
-                            <option value="otro">Solo quiero saludar</option>
-                        </select>
-                        <span class="form-field-error" data-fs-error="asunto"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Cuéntame...</label>
-                        <textarea id="message" name="mensaje" rows="5" placeholder="Escribe aquí tu mensaje felino..."
-                            data-fs-field required></textarea>
-                        <span class="form-field-error" data-fs-error="mensaje"></span>
-                    </div>
-                    <button type="submit" class="btn-primary btn-full" data-fs-submit-btn>
-                        Enviar mensaje <i class="ri-send-plane-fill"></i>
-                    </button>
-                    <p class="form-status form-status-success" data-fs-success role="status" aria-live="polite">
-                        ¡Gracias! Tu mensaje se envió correctamente.
-                    </p>
-                    <p class="form-status form-status-error" data-fs-error="" role="alert" aria-live="assertive"></p>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Botón flotante -->
-    <div class="cat-icon">
-        <span id="catMessage" class="cat-icon-text"></span>
-        <a id="catButton" href="#home" class="cat-icon-btn" aria-label="Volver arriba">😺</a>
-    </div>
-
-    <!-- Aviso de construcción -->
-    <div class="status-banner">
-        <p><i class="ri-hammer-line"></i> Página en construcción: pronto más novedades gatunas</p>
-    </div>
-
-    <!-- ============================
-         FOOTER
-         ============================ -->
-    <footer class="main-footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <img src="assets/icons/logo.webp" alt="Mewmory Logo" class="footer-logo" loading="lazy"
-                    decoding="async">
-                <p>Un cuaderno felino personal donde comparto la vida con mis gatos, datos curiosos y guías básicas de
-                    cuidado.</p>
-
-                <div class="footer-social">
-                    <h4>Sígueme</h4>
-                    <div class="social-icons">
-                        <a href="https://discord.com/@me" title="Discord" aria-label="Discord"><i
-                                class="ri-discord-fill"></i></a>
-                        <a href="https://github.com/AntonyPss/Mewmory" title="GitHub" aria-label="GitHub"><i
-                                class="ri-github-fill"></i></a>
-                        <a href="https://x.com/AntonyPss" title="X (Twitter)" aria-label="X"><i
-                                class="ri-twitter-x-line"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-links">
-                <h4>Explora</h4>
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Sobre Mewmory</a></li>
-                    <li><a href="#cats">Mis gatos</a></li>
-                    <li><a href="#community">Comunidad gatuna</a></li>
-                    <li><a href="#curiosities">Curiosidades</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-                <h4>Aprende</h4>
-                <ul>
-                    <li><a href="#care">Cuidados básicos</a></li>
-                    <li><a href="#food">Comidas recomendadas</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-                <h4>Recursos externos</h4>
-                <ul>
-                    <li><a href="https://www.cornell.edu/" target="_blank" rel="noopener">Cornell Feline Health</a></li>
-                    <li><a href="https://www.idpyba.gov.co/" target="_blank" rel="noopener">IDPYBA Bogotá</a></li>
-                    <li><a href="https://www.nationalgeographic.com/animals/mammals/facts/domestic-cat" target="_blank"
-                            rel="noopener">National Geographic</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="container">
-                <p>© 2026 Mewmory · Hecho con <i class="ri-heart-3-fill"></i> por Antony · Proyecto personal sin fines
-                    de adopción</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modal de gato -->
-    <div id="cat-modal-overlay" class="cat-modal-overlay" aria-hidden="true">
-        <div class="cat-modal" role="dialog" aria-modal="true" aria-labelledby="cat-modal-title" tabindex="-1">
-            <header class="cat-modal-header">
-                <div class="cat-modal-heading">
-                    <h3 id="cat-modal-title" class="cat-modal-title"></h3>
-                    <span class="cat-modal-status" id="cat-modal-status"></span>
-                </div>
-                <button id="cat-modal-close" class="cat-modal-close" type="button" aria-label="Cerrar ventana">
-                    <i class="ri-close-line" aria-hidden="true"></i>
-                </button>
-            </header>
-            <div class="cat-modal-image-wrapper">
-                <img id="cat-modal-image" src="" alt="" class="cat-modal-image">
-            </div>
-
-            <div class="cat-modal-content">
-                <div class="cat-modal-facts">
-                    <span class="cat-modal-fact"><strong>Raza:</strong> <span id="cat-modal-breed"></span></span>
-                    <span class="cat-modal-fact"><strong>Género:</strong> <span id="cat-modal-gender"></span></span>
-                    <span class="cat-modal-fact"><strong>Peso:</strong> <span id="cat-modal-weight"></span></span>
-                    <span class="cat-modal-fact"><strong>Color:</strong> <span id="cat-modal-color"></span></span>
-                    <span class="cat-modal-fact"><strong>Edad:</strong> <span id="cat-modal-age"></span></span>
-                </div>
-                <section class="cat-modal-story" aria-labelledby="cat-modal-story-title">
-                    <div class="left-side">
-                        <h4 id="cat-modal-story-title">Sobre <span class="cat-modal-name"></span></h4>
-                        <p class="cat-modal-description" id="cat-modal-description"></p>
-                    </div>
-                    <div class="right-side">
-                        <h4>Historia</h4>
-                        <p class="cat-modal-description" id="cat-modal-history"></p>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/main.js"></script>
-    <script src="js/cats.js"></script>
-    <script src="js/sections.js"></script>
-    <script>
-        window.formspree = window.formspree || function () {
-            (formspree.q = formspree.q || []).push(arguments);
-        };
-        formspree("initForm", { formElement: "#contact-form", formId: "mdeawbrw" });
-    </script>
-    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
-</body>
-
-</html>
->>>>>>> 3f259a2fd3ea77fbe86c280df0e5098db5e711fc

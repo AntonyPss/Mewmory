@@ -406,6 +406,13 @@ button {
     width: 100%;
 }
 
+.locale-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+}
+
 @media (min-width: 768px) {
     .nav-buttons {
         flex-direction: row;
@@ -450,7 +457,8 @@ button {
     background-color: var(--primary-light);
 }
 
-.theme-toggle {
+.theme-toggle,
+.language-toggle {
     display: inline-flex;
     align-self: center;
     align-items: center;
@@ -467,12 +475,19 @@ button {
     transition: var(--transition-all);
 }
 
-.theme-toggle:hover {
+.language-toggle {
+    font-size: var(--fs-sm);
+    font-weight: 700;
+}
+
+.theme-toggle:hover,
+.language-toggle:hover {
     background: var(--primary-light);
     transform: translateY(-2px);
 }
 
-.theme-toggle:focus-visible {
+.theme-toggle:focus-visible,
+.language-toggle:focus-visible {
     outline: 2px solid var(--text-accent);
     outline-offset: 3px;
 }
