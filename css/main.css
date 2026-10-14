@@ -625,50 +625,11 @@ button {
     overflow: hidden;
 }
 
-.carousel-track {
-    display: flex;
-    height: 100%;
-    width: 300%;
-    animation: carousel-slide 24s infinite ease-in-out;
-    will-change: transform;
-}
-
-.carousel-slide {
-    flex: 0 0 33.3333%;
-    height: 100%;
-}
-
-.carousel-slide img {
+.carousel img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-@keyframes carousel-slide {
-
-    0%,
-    28% {
-        transform: translateX(0);
-    }
-
-    33%,
-    61% {
-        transform: translateX(-33.3333%);
-    }
-
-    66%,
-    94% {
-        transform: translateX(-66.6666%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-.hero:hover .carousel-track {
-    animation-play-state: paused;
 }
 
 /* ===========================
