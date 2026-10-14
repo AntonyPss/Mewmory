@@ -119,7 +119,8 @@
              ABOUT (discreto)
              ============================ -->
         <section id="about" class="about-section about-compact" role="region" aria-label="Sobre Mewmory">
-            <img src="assets/icons/yo.png" alt="Antony, creador de Mewmory" class="about-image" width="120" height="120" decoding="async">
+            <img src="assets/icons/yo.png" alt="Antony, creador de Mewmory" class="about-image" width="120" height="120"
+                decoding="async">
             <div class="about-content">
                 <h2>¿Quién está detrás de Mewmory?</h2>
                 <p>Soy <strong>Antony</strong>, desarrollador web y amante de los gatos. Creé este espacio para
@@ -150,12 +151,14 @@
 
             <div class="community-grid">
                 <section class="community-panel" aria-labelledby="community-photos-title">
-                    <h3 id="community-photos-title"><i class="ri-image-line" aria-hidden="true"></i> Fotos de la comunidad</h3>
+                    <h3 id="community-photos-title"><i class="ri-image-line" aria-hidden="true"></i> Fotos de la
+                        comunidad</h3>
                     <div id="community-photo-grid" class="community-photo-grid"></div>
                 </section>
 
                 <section class="community-panel" aria-labelledby="community-stories-title">
-                    <h3 id="community-stories-title"><i class="ri-book-open-line" aria-hidden="true"></i> Historias felinas</h3>
+                    <h3 id="community-stories-title"><i class="ri-book-open-line" aria-hidden="true"></i> Historias
+                        felinas</h3>
                     <div id="community-story-list" class="community-story-list"></div>
                 </section>
             </div>
@@ -256,12 +259,14 @@
                 <form id="contact-form" class="contact-form" action="https://formspree.io/f/mdeawbrw" method="POST">
                     <div class="form-group">
                         <label for="name">¿Cómo te llamas?</label>
-                        <input type="text" id="name" name="nombre" placeholder="Tu nombre o el de tu gato" data-fs-field required>
+                        <input type="text" id="name" name="nombre" placeholder="Tu nombre o el de tu gato" data-fs-field
+                            required>
                         <span class="form-field-error" data-fs-error="nombre"></span>
                     </div>
                     <div class="form-group">
                         <label for="email">Tu correo</label>
-                        <input type="email" id="email" name="email" placeholder="michi-lover@email.com" data-fs-field required>
+                        <input type="email" id="email" name="email" placeholder="michi-lover@email.com" data-fs-field
+                            required>
                         <span class="form-field-error" data-fs-error="email"></span>
                     </div>
                     <div class="form-group">
@@ -310,7 +315,8 @@
     <footer class="main-footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                <img src="assets/icons/logo.webp" alt="Mewmory Logo" class="footer-logo" loading="lazy" decoding="async">
+                <img src="assets/icons/logo.webp" alt="Mewmory Logo" class="footer-logo" loading="lazy"
+                    decoding="async">
                 <p>Un cuaderno felino personal donde comparto la vida con mis gatos, datos curiosos y guías básicas de
                     cuidado.</p>
 
@@ -391,8 +397,14 @@
                     <span class="cat-modal-fact"><strong>Edad:</strong> <span id="cat-modal-age"></span></span>
                 </div>
                 <section class="cat-modal-story" aria-labelledby="cat-modal-story-title">
-                    <h4 id="cat-modal-story-title">Sobre <span class="cat-modal-name"></span></h4>
-                    <p class="cat-modal-description" id="cat-modal-description"></p>
+                    <div class="left-side">
+                        <h4 id="cat-modal-story-title">Sobre <span class="cat-modal-name"></span></h4>
+                        <p class="cat-modal-description" id="cat-modal-description"></p>
+                    </div>
+                    <div class="right-side">
+                        <h4>Historia</h4>
+                        <p class="cat-modal-description" id="cat-modal-history"></p>
+                    </div>
                 </section>
             </div>
         </div>
